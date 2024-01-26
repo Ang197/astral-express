@@ -5,9 +5,9 @@ Main goal is to provide information in regards to characters or light cones
 
 # Installation steps
 
-Step 1: Run npm install within the astral-express folder
-Step 2: Change the directory into src folder
-Step 3: Then run "npm run dev" and double click the link within the terminal to open up the website
+* Step 1: Run npm install within the astral-express folder
+* Step 2: Change the directory into src folder
+* Step 3: Then run "npm run dev" and double click the link within the terminal to open up the website
 
 # React + Vite
 
