@@ -1,0 +1,108 @@
+:root {
+    --headerColor: rgb(0, 29, 66);
+	--mainColor: #202949;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #ff0015;
+	--textColor: #ffffff;
+}
+
+.header{
+    background-color: rgb(0, 29, 66);
+}
+
+.header .headerTop{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    min-height: 10vh;
+    min-height: 10dvh;
+    min-width: 10vh;
+    min-width: 10dvh;
+    background-color: var(--headerColor);
+}
+
+.headerTop .headerLogo{
+    width: 6rem;
+}
+
+.headerTop .headerTitle{
+    font-size: 1.4rem;
+}
+
+.headerNavbar {
+    display: flex;
+    width: 100%;
+    top: 7.4rem;
+    padding: 0 2rem;
+    position: fixed;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+.navbar .navLinks {
+    display: flex;
+    list-style-type: none;
+}
+
+.headerNavbar .navbar .navLinks a{
+    color: var(--textColor);
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar .navLinks a:hover{
+    color: var(--secondaryColor);
+    transition: 0.25s;
+    
+}
+
+.headerNavbar .navBtn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.headerNavbar div, .navbar{
+    display: flex;
+}
+
+@media only screen and (max-width: 100dvh){
+    .headerNavbar .navBtn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .headerNavbar .navbar{
+        position: fixed;
+        left: -100vh;
+        bottom: 0;
+        height: 100%;
+        width: 30%;
+        background-color: var(--mainColor);
+        transition: 0.4s
+    }
+    .headerNavbar .navbar .navLinks{
+        font-size: 1.2rem;
+        display: block;
+        padding-top: 8dvh;
+    }
+
+    .headerNavbar .responsive_nav{
+        transform: translateX(100vh);
+    }
+
+    .navbar .navCloseBtn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+}

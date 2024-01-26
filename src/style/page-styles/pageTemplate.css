@@ -1,0 +1,49 @@
+.pageContainer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(80%, max-content));
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-auto-flow: row;
+    min-height: 50vh;
+    min-height: 50dvh;
+    min-width: 65vh;
+    min-width: 65dvh;
+    grid-template-areas: 
+    "previewTemplate Links"
+}
+
+.pageTitle{
+    margin: 12rem 0rem 3rem 5rem;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.description{
+    margin: 0rem 1rem 0rem 1rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.previewSection, .linkSection{
+    text-align: center;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: rgba(23, 23, 23, 0.5);
+    padding: 10px;
+}
+
+.homeContainer .previewSection{
+    grid-area: previewTemplate;
+}
+
+@media only screen and (max-width: 75dvh){
+    .pageContainer{
+        display: grid;
+        grid-template-areas: 
+        "previewTemplate"
+        "Links";
+        font-size: 0.7rem;
+    }
+}
+

@@ -1,0 +1,35 @@
+.searchBarContainer{
+    display: flex;
+    left: 1.5rem;
+    position: relative;
+}
+
+.searchBarElement{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 0;
+    transition: width .5s;
+    background-color: black;
+    color: white;
+}
+
+.searchBtn{
+    position: absolute !important;
+    right: 1.5rem;
+    font-size: 5rem;
+    top: 1.2rem;
+}
+
+.searchBarElement:focus{
+    width: 600px;
+}
+
+
+@media only screen and (max-width: 100dvh){
+    .searchBarElement:focus{
+        width: 500px;
+    }
+}
