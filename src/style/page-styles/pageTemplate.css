@@ -1,3 +1,11 @@
+/* 
+    Meant to create the same format/template
+    for each of the pages within the website
+
+    Each page will also have its own css, but
+    mainly for each of the content that appears
+*/
+
 .pageContainer{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80%, max-content));

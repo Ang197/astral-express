@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import Search from '../components/Search'
 
 function Navbar() {
+
+    // useRef and Arrow function used when the screen only fits on Mobile size or smaller
     const navRef = useRef();
     const showNavBar = () => {
         navRef.current.classList.toggle("responsive_nav")
