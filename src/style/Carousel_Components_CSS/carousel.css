@@ -1,12 +1,54 @@
 .carousel{
     overflow: hidden;
+    margin-left: 20%;
     display: flex;
+    width: 871px;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .carouselContainer{
     white-space: nowrap;
     transition: transform 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.carouselButtons{
+    display: flex;
+    justify-content: space-evenly;
+
+    .buttonArrow{
+        background: None;
+        border: none;
+        cursor: pointer;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        color: white;
+    }
+
+    .carouselIndicators{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .carouselIndicatorButtons{
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+        background: none;
+        color: white;
+    }
+
+    .indicatorSymbol{
+        color: black;
+    }
+
+    .indicatorSymbol:active{
+        color: white;
+    }
+
 }

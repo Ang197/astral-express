@@ -12,6 +12,7 @@
     width: 100%;
     padding: 1rem 5rem 1rem 2.5rem;
     background-color: var(--headerColor);
+    z-index: 1;
 
     .headerLogo{
         width: 6rem;
@@ -28,6 +29,7 @@
     background-color: var(--mainColor);
     color: var(--textColor);
     top: 5.3rem;
+    z-index: 1;
     
     .navbar .navLinks {
         display: flex;
