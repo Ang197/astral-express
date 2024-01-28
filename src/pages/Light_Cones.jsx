@@ -4,10 +4,9 @@ import Links from "../components/Links"
 function Weapons() {
     return (
         <>
-            <h1 className="pageTitle">Light Cones</h1>
             <div className="pageContainer">
                 <div className="previewSection">
-                        <h1>Preview</h1>
+                        <h1>Light Cones</h1>
                     </div>
                     <Links/>
             </div>

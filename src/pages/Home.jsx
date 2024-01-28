@@ -1,15 +1,14 @@
 import '../style/page-styles/pageTemplate.css'
 import Links from "../components/Links"
-import Carasoul from "../components/Carasoul"
+import Carousel from "../components/Carousel_Component/Carousel"
 
 function Home() {
     return (
         <>
-            <h1 className="pageTitle">Home</h1>
             <div className="pageContainer">                
                 <div className="previewSection">
-                    <h1>Preview</h1>
-                    <Carasoul/>
+                    <h1>News</h1>
+                    <Carousel/>
                 </div>
                 <Links/>
             </div>

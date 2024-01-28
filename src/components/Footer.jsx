@@ -1,5 +1,8 @@
 import '../style/footer.css'
 
+/**
+ * Footer for the entire website
+ */
 function Footer() {
     return (
         <footer className="footerContainer">

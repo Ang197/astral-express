@@ -1,6 +1,12 @@
 import '../style/search.css'
 import { useState } from 'react'
 
+/**
+ * Used to search for anything, including information found
+ * on other pages such as characters in the characters page,
+ * or light cones in the light cones page
+ */
+
 function Search() {
     const [input, setInput] = useState("")
     const DATA_URL = "https://genshin.jmp.blue/characters"

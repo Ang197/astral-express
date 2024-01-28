@@ -7,6 +7,7 @@
 */
 
 .pageContainer{
+    padding-top: 13rem;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80%, max-content));
     grid-template-rows: auto;
@@ -18,12 +19,6 @@
     min-width: 65dvh;
     grid-template-areas: 
     "previewTemplate Links"
-}
-
-.pageTitle{
-    margin: 12rem 0rem 3rem 5rem;
-    font-size: 2rem;
-    font-weight: normal;
 }
 
 .description{

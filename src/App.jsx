@@ -11,7 +11,7 @@ import {
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Characters from "./pages/Characters.jsx"
-import Weapons from "./pages/Weapons.jsx"
+import Light_Cones from "./pages/Light_Cones.jsx"
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Characters" element={<Characters />} />
-          <Route exact path="/Light_Cones" element={<Weapons />} />
+          <Route exact path="/Light_Cones" element={<Light_Cones />} />
           <Route exact path="*" element={
             <div className="errorPage">
               <h2>404: Page not found</h2>

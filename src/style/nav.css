@@ -1,84 +1,72 @@
 :root {
-    --headerColor: rgb(0, 29, 66);
+    --headerColor: rgb(0, 19, 44);
 	--mainColor: #202949;
 	--mainColorLight: #5767aa;
 	--secondaryColor: #ff0015;
 	--textColor: #ffffff;
 }
-
-.header{
-    background-color: rgb(0, 29, 66);
-}
-
 .header .headerTop{
     display: flex;
     align-items: center;
     position: fixed;
-    top: 0px;
     width: 100%;
-    padding: 0px 50px 0px 50px;
-    min-height: 10vh;
-    min-height: 10dvh;
-    min-width: 10vh;
-    min-width: 10dvh;
+    padding: 1rem 5rem 1rem 2.5rem;
     background-color: var(--headerColor);
-}
 
-.headerTop .headerLogo{
-    width: 6rem;
-}
-
-.headerTop .headerTitle{
-    font-size: 1.4rem;
+    .headerLogo{
+        width: 6rem;
+    }
+    .headerTitle{
+        font-size: 1.2rem;
+    }
 }
 
 .headerNavbar {
     display: flex;
     width: 100%;
-    top: 7.4rem;
-    padding: 0 2rem;
     position: fixed;
     background-color: var(--mainColor);
     color: var(--textColor);
-}
-
-.navbar .navLinks {
-    display: flex;
-    list-style-type: none;
-}
-
-.headerNavbar .navbar .navLinks a{
-    color: var(--textColor);
-    text-decoration: none;
-    margin: 1rem;
-    font-size: 1.2rem;
-}
-
-.navbar .navLinks a:hover{
-    color: var(--secondaryColor);
-    transition: 0.25s;
+    top: 5.3rem;
     
-}
+    .navbar .navLinks {
+        display: flex;
+        list-style-type: none;
+    }
 
-.headerNavbar .navBtn {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--textColor);
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.8rem;
-}
+    .navbar .navLinks a{
+        color: var(--textColor);
+        text-decoration: none;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
 
-.headerNavbar div, .navbar{
-    display: flex;
+    .navbar .navLinks a:hover{
+        color: var(--secondaryColor);
+        transition: 0.25s;
+        
+    }
+
+    .navBtn {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--textColor);
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.8rem;
+    }
+    .headerNavbar > div, .navbar{
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 100dvh){
     .headerNavbar .navBtn {
         visibility: visible;
         opacity: 1;
+        padding: 0.2rem 0rem 0rem 5rem;
     }
 
     .headerNavbar .navbar{
@@ -86,7 +74,7 @@
         left: -100vh;
         bottom: 0;
         height: 100%;
-        width: 30%;
+        width: 23%;
         background-color: var(--mainColor);
         transition: 0.4s
     }

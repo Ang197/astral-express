@@ -6,20 +6,19 @@
 
 .searchBarElement{
     outline: none;
-    border: none;
     font-size: 1rem;
-    border-radius: 30px;
-    padding: 1rem 2rem;
+    border: solid gray;
+    border-radius: 2rem;
+    padding: 0.9rem 2rem;
     width: 0;
     transition: width .5s;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
 .searchBtn{
     position: absolute !important;
-    right: 1.5rem;
-    font-size: 5rem;
+    right: 1.8rem;
     top: 1.2rem;
 }
 
