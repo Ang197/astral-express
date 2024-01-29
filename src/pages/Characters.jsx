@@ -5,7 +5,7 @@ function Character() {
     return (
         <>
             <div className="pageContainer">
-                <div className="previewSection">
+                <div className="previewSection w3-animate-top">
                         <h1>Characters</h1>
                     </div>
                     <Links/>

@@ -6,6 +6,10 @@
     mainly for each of the content that appears
 */
 
+:root{
+    --hoverColor: red;
+}
+
 .pageContainer{
     padding-top: 13rem;
     display:grid;
@@ -22,9 +26,26 @@
 }
 
 .description{
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
     font-weight: normal;
     font-size: 1.1rem;
+    max-width: 100dvh;
+    margin: auto;
+}
+
+.creditsLink{
+    font-size: 1.5rem;
+}
+
+.githubLink{
+    text-decoration: none;
+    color: white;
+}
+
+.githubLink:hover{
+    color: var(--hoverColor);
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 .previewSection, .linkSection{

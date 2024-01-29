@@ -1,7 +1,7 @@
 import '../style/nav.css';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from 'react';
-import Search from '../components/Search'
+import Search from './Search'
 
 /**
  * Used to hold links for the other pages as well

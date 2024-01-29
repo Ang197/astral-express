@@ -1,5 +1,5 @@
-import Navbar from './components/NavBar.jsx'
-import Footer from './components/Footer.jsx'
+import Navbar from './layout/NavBar.jsx'
+import Footer from './layout/Footer.jsx'
 
 import './style/page.css'
 

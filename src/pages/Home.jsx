@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <div className="pageContainer">                
-                <div className="previewSection">
+                <div className="previewSection w3-animate-top">
                     <h1>News</h1>
                     <Carousel/>
                 </div>
