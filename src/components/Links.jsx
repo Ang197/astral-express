@@ -6,7 +6,7 @@ import '../style/page-styles/pageTemplate.css'
  */
 function Links() {
     return (
-        <div className="linkSection">
+        <div className="linkSection w3-animate-top">
             <p>Links</p>
         </div>
     )

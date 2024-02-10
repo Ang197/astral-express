@@ -74,20 +74,17 @@
     }
 
     /*For mobile screen */
-    @media only screen and (max-width: 720px){
+    @media only screen and (max-width: 490px){
         .pageContainer{
             grid-template-columns: repeat(auto-fill, minmax(70%, max-content));
             grid-template-rows: auto;
             font-size: 1rem;
         }
 
-        .description{
-            font-size: 0.7rem;
+        .description .creditsLink{
+            font-size: 0.9rem;
             max-width: 30dvh;
-        }
-
-        .creditsLink{
-            font-size: 0.7rem;
+            max-height: 30dvh;
         }
     }
 }

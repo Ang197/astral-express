@@ -10,7 +10,7 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    padding: 1rem 5rem 1rem 2.5rem;
+    padding: 1rem 0rem 2rem 1rem;
     background-color: var(--headerColor);
     z-index: 1;
 
@@ -104,10 +104,13 @@
     
     /*For mobile screen */
     @media only screen and (max-width: 720px){
-
         .header .headerTop {
+            .headerLogo{
+
+            }
+            
             .headerTitle{
-                
+                display: none;
             }
         }
 
