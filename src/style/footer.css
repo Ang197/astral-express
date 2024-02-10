@@ -1,4 +1,10 @@
 .footerContainer{
     font-weight: bold;
     text-align: center;
+}
+
+@media only screen and (max-width: 720px){
+  .footerContainer{
+    font-size: 0.8rem;
   }
+}
