@@ -1,5 +1,4 @@
-import '../../style/Carousel_Components_CSS/carousel.css';
-import CarouselItems from "./CarouselItems";
+import Carousel from "react-bootstrap/Carousel"
 import {useState} from "react";
 
 /**
@@ -23,73 +22,10 @@ function carousel(){
             Image: require("../../media/seele-lc.png"),
         },
     ];
-
-    const updateIndex = (newIndex) => {
-        if(newIndex < 0){
-            newIndex = 0;
-        } else if (newIndex >= items.length){
-            newIndex = items.length - 1;
-        }
-
-        setActiveIndex(newIndex)
-    };
-
+    
     return(
-        <div className="carousel">
-            <div className="carouselContainer"
-                    style={{transform: `translate(-${activeIndex * 100}%)`
-                }}
-            >
-                {items.map((item) => {
-                    return <CarouselItems item={item} width={"100%"}/>;
-                })}
-            </div>
-
-            <div 
-                className="carouselButtons">
-                <button 
-                    onClick={()=>{
-                        updateIndex(activeIndex - 1);
-                    }} 
-                    className="buttonArrow">
-                    <span className="material-symbols-outlined">
-                        arrow_back_ios
-                    </span>{" "}
-                </button>
-
-                <div className="carouselIndicators">
-                    {items.map((item, index) => {
-                        return(
-                            <button 
-                                onClick={()=>{
-                                    updateIndex(index);
-                                }} 
-                                className="carouselIndicatorButtons">
-                            <span 
-                                className={`material-symbols-outlined ${
-                                    index===activeIndex 
-                                    ?"indicatorSymbol:active"
-                                    :"indicatorSymbol"
-                                    }`}
-                                >
-                                radio_button_checked
-                            </span>
-                        </button>
-                        )
-                    })}
-                </div>
-
-                <button 
-                    onClick={()=>{
-                        updateIndex(activeIndex + 1);
-                    }} 
-                    className="buttonArrow">
-                    <span className="material-symbols-outlined">
-                        arrow_forward_ios
-                    </span>
-                </button>
-            </div>
-        </div>
+        <>
+        </>
     )
 }
 

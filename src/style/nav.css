@@ -31,7 +31,7 @@
     top: 5.3rem;
     z-index: 1;
     
-    .navbar .navLinks {
+    .navbar .navLinks{
         display: flex;
         list-style-type: none;
     }
@@ -64,7 +64,8 @@
     }
 }
 
-@media only screen and (max-width: 100dvh){
+/*For half screen on laptop to create sidebar*/
+@media only screen and (max-width: 960px){
     .headerNavbar .navBtn {
         visibility: visible;
         opacity: 1;
@@ -81,9 +82,13 @@
         transition: 0.4s
     }
     .headerNavbar .navbar .navLinks{
-        font-size: 1.2rem;
+        font-size: 0.5rem;
         display: block;
         padding-top: 8dvh;
+    }
+
+    .headerNavbar .navbar .navLinks a{
+        font-size: 1rem;
     }
 
     .headerNavbar .responsive_nav{
@@ -94,5 +99,18 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    /*For mobile screen */
+    @media only screen and (max-width: 720px){
+
+        .headerNavbar .navBtn {
+            padding: 0.2rem 0rem 0rem 2rem;
+        }
+
+        .headerNavbar .navbar{
+            width: 45%;
+        }
     }
 }
