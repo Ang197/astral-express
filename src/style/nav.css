@@ -88,7 +88,7 @@
     }
 
     .headerNavbar .navbar .navLinks a{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .headerNavbar .responsive_nav{
@@ -105,10 +105,6 @@
     /*For mobile screen */
     @media only screen and (max-width: 720px){
         .header .headerTop {
-            .headerLogo{
-
-            }
-            
             .headerTitle{
                 display: none;
             }

@@ -11,30 +11,26 @@
 }
 
 .pageContainer{
-    padding-top: 13rem;
+    padding-top: 10rem;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80%, max-content));
     grid-template-rows: auto;
     grid-gap: 15px;
     grid-auto-flow: row;
-    min-height: 50vh;
-    min-height: 50dvh;
+    min-height: 90vh;
+    min-height: 90dvh;
     min-width: 65vh;
     min-width: 65dvh;
     grid-template-areas: 
     "previewTemplate Links"
 }
 
-.description{
+.description, .creditsLink{
     margin: 0rem;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     max-width: 100dvh;
     margin: auto;
-}
-
-.creditsLink{
-    font-size: 1.5rem;
 }
 
 .githubLink{
@@ -67,10 +63,18 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100%, max-content));
         grid-template-rows: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+        min-width: 65vh;
+        min-width: 65dvh;
         grid-template-areas: 
         "previewTemplate"
         "Links";
         font-size: 1rem;
+
+        .description, .creditsLink{
+            font-size: 1.2rem;
+        }
     }
 
     /*For mobile screen */
@@ -78,13 +82,21 @@
         .pageContainer{
             grid-template-columns: repeat(auto-fill, minmax(70%, max-content));
             grid-template-rows: auto;
+            min-height: 80vh;
+            min-height: 80dvh;
+            min-width: 60vh;
+            min-width: 60dvh;
             font-size: 1rem;
         }
 
-        .description .creditsLink{
-            font-size: 0.9rem;
+        h2{
+            font-size: 1.6rem;
+        }
+        
+
+        .description, .creditsLink{
+            font-size: 1rem;
             max-width: 30dvh;
-            max-height: 30dvh;
         }
     }
 }

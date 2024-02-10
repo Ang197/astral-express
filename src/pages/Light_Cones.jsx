@@ -6,7 +6,7 @@ function Weapons() {
         <>
             <div className="pageContainer">
                 <div className="previewSection w3-animate-top">
-                        <p>Light Cones</p>
+                        <h2>Light Cones</h2>
                     </div>
                     <Links/>
             </div>

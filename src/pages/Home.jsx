@@ -6,7 +6,7 @@ function Home() {
         <>
             <div className="pageContainer">                
                 <div className="previewSection w3-animate-top">
-                    <p>News</p>
+                    <h2>News</h2>
                 </div>
                 <Links/>
             </div>

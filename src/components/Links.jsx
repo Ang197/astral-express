@@ -7,7 +7,7 @@ import '../style/page-styles/pageTemplate.css'
 function Links() {
     return (
         <div className="linkSection w3-animate-top">
-            <p>Links</p>
+            <h2>Links</h2>
         </div>
     )
 }
