@@ -1,0 +1,18 @@
+.carouselContainer{
+    width: 80rem;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.carouselImage{
+    padding: 0rem;
+    margin: 0rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px){
+    .carouselContainer{
+        width: 40rem;
+        margin: auto;
+    }
+}

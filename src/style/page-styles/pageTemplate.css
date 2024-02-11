@@ -11,14 +11,14 @@
 }
 
 .pageContainer{
-    padding-top: 10rem;
+    padding-top: 3rem;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80%, max-content));
     grid-template-rows: auto;
     grid-gap: 15px;
     grid-auto-flow: row;
-    min-height: 90vh;
-    min-height: 90dvh;
+    min-height: 70vh;
+    min-height: 70dvh;
     min-width: 65vh;
     min-width: 65dvh;
     grid-template-areas: 

@@ -1,7 +1,7 @@
 :root {
     --headerColor: rgb(0, 19, 44);
-	--mainColor: #202949;
-	--mainColorLight: #5767aa;
+	--mainColor: #141a2e;
+	--mainColorLight: hsl(228, 33%, 50%);
 	--secondaryColor: #ff0015;
 	--textColor: #ffffff;
 }
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 1rem 0rem 2rem 1rem;
+    padding: 1rem 0rem 1rem 1rem;
     background-color: var(--headerColor);
     z-index: 1;
 
@@ -76,6 +76,7 @@
         bottom: 0;
         height: 100%;
         width: 23%;
+        z-index: 1;
         background-color: var(--mainColor);
         transition: 0.4s
     }
