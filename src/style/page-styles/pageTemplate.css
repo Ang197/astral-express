@@ -33,6 +33,10 @@
     }
 }
 
+.lightConeContainer{
+    
+}
+
 .description, .creditsLink{
     margin: 0rem;
     font-weight: normal;
@@ -60,8 +64,6 @@
     background-color: rgba(23, 23, 23, 0.5);
     padding: 10px;
 }
-
-
 
 /*For half screen on laptop to realign grid*/
 @media only screen and (max-width: 960px){

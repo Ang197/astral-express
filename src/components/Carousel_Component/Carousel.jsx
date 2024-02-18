@@ -8,37 +8,25 @@ import '../../style/carousel.css'
  * for either current banners/events/news/resources for players
  * 
  */
-function carousel(){
+function carousel(props){
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex)
     }
-
-    const items = [
-        {
-            Image: require("media/himiko-lc.png"),
-        },
-        {
-            Image: require ("media/silverWolf-lc.png"),
-        },
-        {
-            Image: require("media/seele-lc.png"),
-        },
-    ];
     
     return(
         <div className="carouselContainer">
             <Carousel activeIndex={index} 
                     onSelect={handleSelect}>
                 <Carousel.Item >
-                    <img className="carouselImage" src="media/himiko-lc.png"/> 
+                    <img className="carouselImage" src={props.image1}/> 
                 </Carousel.Item>
                 <Carousel.Item >
-                    <img className="carouselImage" src="media/seele-lc.png"/>
+                    <img className="carouselImage" src={props.image2}/>
                 </Carousel.Item>
                 <Carousel.Item >
-                    <img className="carouselImage" src="media/silverWolf-lc.png"/>
+                    <img className="carouselImage" src={props.image3}/>
                 </Carousel.Item>
             </Carousel>
         </div>
