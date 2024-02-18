@@ -1,5 +1,5 @@
 .carouselContainer{
-    width: 80rem;
+    width: 65rem;
     margin: auto;
     padding-bottom: 3rem;
 }
@@ -13,6 +13,5 @@
 @media only screen and (max-width: 960px){
     .carouselContainer{
         width: 40rem;
-        margin: auto;
     }
 }
