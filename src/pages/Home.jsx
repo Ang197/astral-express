@@ -1,26 +1,37 @@
 import '../style/page-styles/pageTemplate.css'
+import styles from '../style/css-modules/home.module.css';
 import Carousel from "../components/Carousel_Component/Carousel"
 import Links from "../components/Links"
 
 function Home() {
     const items = [
         {
-            Image: "news-preview/himiko-lc.png",
+            path: "news-preview/himiko-lc.png",
         },
         {
-            Image: "news-preview/silverWolf-lc.png",
+            path: "news-preview/silverWolf-lc.png",
         },
         {
-            Image: "news-preview/seele-lc.png",
+            path : "news-preview/seele-lc.png",
         },
     ];
+
+    const homePreviewItems = items.map((x) =>(
+        <div key={x.id}>
+            <img className={styles.customHomePreview} src={x.path}/>
+        </div>
+    ))
 
     return (
         <>
             <div className="pageContainer">                
                 <div className="previewSection w3-animate-top">
                     <h2>News</h2>
-                    <Carousel image1={items[0].Image} image2={items[1].Image} image3={items[2].Image}/>
+                    <Carousel 
+                        image1={homePreviewItems[0].props.children.props.src}
+                        image2={homePreviewItems[1].props.children.props.src} 
+                        image3={homePreviewItems[2].props.children.props.src}
+                    />
                 </div>
                 <Links/>
             </div>
