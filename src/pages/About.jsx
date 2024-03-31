@@ -4,9 +4,9 @@ import Links from "../components/Links"
 function About() {
     return (
         <>
+            <h2>About us</h2>
             <div className="pageContainer">
                 <div className="previewSection w3-animate-top">
-                        <h2>About us</h2>
                         <p className="description">
                             Astral Express is a resource website for Honkai Star Rail players.
                             Need information for characters or light cones? Astral Express is

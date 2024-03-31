@@ -1,6 +1,7 @@
 .searchBarContainer{
     display: flex;
-    left: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .searchBarElement:focus{
-    width: 600px;
+    width: 60rem;
 }
 
 

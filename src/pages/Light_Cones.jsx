@@ -27,15 +27,15 @@ function Weapons() {
 
     return (
         <>
+            <h2>Light Cones</h2>
             <div className="pageContainer">
                 <div className="previewSection w3-animate-top">
-                        <h2>Light Cones</h2>
                         <div className="lightConeContainer">
-                        <Carousel 
-                            image1={lcPreviewItems[0].props.children.props.src}
-                            image2={lcPreviewItems[1].props.children.props.src} 
-                            image3={lcPreviewItems[2].props.children.props.src}
-                        />
+                        {/* <Carousel 
+                            // image1={lcPreviewItems[0].props.children.props.src}
+                            // image2={lcPreviewItems[1].props.children.props.src} 
+                            // image3={lcPreviewItems[2].props.children.props.src}
+                        /> */}
                         </div>
                     </div>
                     <Links/>

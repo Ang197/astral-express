@@ -1,7 +1,6 @@
 import '../style/nav.css';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from 'react';
-import Search from './Search'
 
 /**
  * Used to hold links for the other pages as well
@@ -30,7 +29,6 @@ function Navbar() {
                         />
                     </a>
                     <h1 className="headerTitle">Astral Express</h1>
-                    <Search/>
                 </div>
             </header>
             <div className="headerNavbar">

@@ -8,6 +8,10 @@ function Links() {
     return (
         <div className="linkSection w3-animate-top">
             <h2>Links</h2>
+            <p>
+                These are the links to other pages, like latest news 
+                or updates
+            </p>
         </div>
     )
 }

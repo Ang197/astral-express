@@ -24,14 +24,14 @@ function Home() {
 
     return (
         <>
+            <h2>News</h2>
             <div className="pageContainer">                
                 <div className="previewSection w3-animate-top">
-                    <h2>News</h2>
-                    <Carousel 
-                        image1={homePreviewItems[0].props.children.props.src}
-                        image2={homePreviewItems[1].props.children.props.src} 
-                        image3={homePreviewItems[2].props.children.props.src}
-                    />
+                    {/* <Carousel 
+                        // image1={homePreviewItems[0].props.children.props.src}
+                        // image2={homePreviewItems[1].props.children.props.src} 
+                        // image3={homePreviewItems[2].props.children.props.src}
+                    /> */}
                 </div>
                 <Links/>
             </div>
