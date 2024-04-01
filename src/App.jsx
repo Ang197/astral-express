@@ -1,4 +1,4 @@
-import Navbar from './layout/NavBar.jsx'
+import Navbar from './layout/Navbar/NavBar.jsx'
 import Footer from './layout/Footer.jsx'
 
 import './style/page.css'
@@ -9,8 +9,8 @@ import {
   Route
 } from "react-router-dom"
 import Home from "./pages/Home.jsx"
-import About from "./pages/About.jsx"
-import Characters from "./pages/Characters.jsx"
+import About from "./pages/About/About.jsx"
+import Characters from "./pages/Character/Characters.jsx"
 import Light_Cones from "./pages/Light_Cones.jsx"
 
 function App() {

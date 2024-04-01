@@ -1,5 +1,5 @@
-import '../style/page-styles/pageTemplate.css'
-import Links from "../components/Links"
+import '../../style/page-styles/pageTemplate.css'
+import Links from "../../components/Links"
 
 function About() {
     return (

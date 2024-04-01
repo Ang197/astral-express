@@ -1,4 +1,5 @@
-import '../style/nav.css';
+import '../../style/nav.css';
+import { menuItems } from './menuItems'
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from 'react';
 
@@ -34,18 +35,13 @@ function Navbar() {
             <div className="headerNavbar">
                 <nav className="navbar" ref={navRef}> 
                     <ul className="navLinks">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/About">About</a>
-                        </li>
-                        <li>
-                            <a href="/Characters">Characters</a>
-                        </li>
-                        <li>
-                            <a href="/Light_Cones">Light Cones</a>
-                        </li>
+                        {menuItems.map((menu, index) => {
+                            return(
+                                <li key={index}>
+                                    <a href={menu.url}>{menu.title}</a>
+                                </li>
+                            )
+                        })}
                     </ul>
                     <button className="navBtn navCloseBtn" onClick={showNavBar}>
                         <FaTimes />
