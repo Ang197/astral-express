@@ -60,7 +60,7 @@ h2{
     text-align: center;
     border: solid 1px;
     border-radius: 1rem;
-    max-width: 140dvh;
+    max-width: 100%;
     border-style: none;
     background-color: rgba(23, 23, 23, 0.5);
     padding: 10px;

@@ -2,6 +2,7 @@ import '../style/page-styles/pageTemplate.css'
 import styles from '../style/css-modules/lightCone.module.css';
 import Links from "../components/Links"
 import Carousel from "../components/Carousel_Component/Carousel"
+import WeaponSearchFunction from "../components/Light_Cone_Search_Components/SearchFunction"
 
 function Weapons() {
     const items = [
@@ -30,6 +31,7 @@ function Weapons() {
             <h2>Light Cones</h2>
             <div className="pageContainer">
                 <div className="previewSection w3-animate-top">
+                        <WeaponSearchFunction/>
                         <div className="lightConeContainer">
                         {/* <Carousel 
                             // image1={lcPreviewItems[0].props.children.props.src}
