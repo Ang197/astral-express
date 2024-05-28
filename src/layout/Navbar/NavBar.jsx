@@ -20,18 +20,6 @@ function Navbar() {
 
     return (
         <>
-            <header className="header">
-                <div className="headerTop">
-                    <a href="/" className="logoLink">
-                        <img
-                            className="headerLogo"
-                            alt="Astral Express Logo"
-                            src="/website-icons/astral_express_train.png"
-                        />
-                    </a>
-                    <h1 className="headerTitle">Astral Express</h1>
-                </div>
-            </header>
             <div className="headerNavbar">
                 <nav className="navbar" ref={navRef}> 
                     <ul className="navLinks">

@@ -1,5 +1,5 @@
-import Carousel from "react-bootstrap/Carousel"
-import 'bootstrap/dist/css/bootstrap.css'
+// import Carousel from "react-bootstrap/Carousel"
+// import 'bootstrap/dist/css/bootstrap.css'
 import {useState} from "react";
 import '../../style/carousel.css'
 
@@ -17,7 +17,7 @@ function carousel(props){
     
     return(
         <div className="carouselContainer">
-            <Carousel activeIndex={index} 
+            {/* <Carousel activeIndex={index} 
                     onSelect={handleSelect}>
                 <Carousel.Item >
                     <img className="carouselImage" src={props.image1}/> 
@@ -28,7 +28,7 @@ function carousel(props){
                 <Carousel.Item >
                     <img className="carouselImage" src={props.image3}/>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </div>
 
     )

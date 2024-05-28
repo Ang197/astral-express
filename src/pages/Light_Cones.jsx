@@ -30,7 +30,7 @@ function Weapons() {
         <>
             <h2>Light Cones</h2>
             <div className="pageContainer">
-                <div className="previewSection w3-animate-top">
+                <div className="previewSection">
                         <h1>Weapon Search:</h1>
                         <WeaponSearchFunction/>
                         {/* <div className="lightConeContainer">

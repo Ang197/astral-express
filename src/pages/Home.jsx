@@ -26,7 +26,7 @@ function Home() {
         <>
             <h2>News</h2>
             <div className="pageContainer">                
-                <div className="previewSection w3-animate-top">
+                <div className="previewSection">
                     {/* <Carousel 
                         // image1={homePreviewItems[0].props.children.props.src}
                         // image2={homePreviewItems[1].props.children.props.src} 

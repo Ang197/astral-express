@@ -1,6 +1,6 @@
 :root {
     --headerColor: rgb(0, 19, 44);
-	--mainColor: #141a2e;
+	--mainColor: rgba(23, 23, 23);
 	--mainColorLight: hsl(228, 33%, 50%);
 	--secondaryColor: #ff0015;
 	--textColor: #ffffff;
@@ -23,6 +23,7 @@
 
 .headerNavbar {
     display: flex;
+    justify-content: center;
     width: 100%;
     background-color: var(--mainColor);
     color: var(--textColor);

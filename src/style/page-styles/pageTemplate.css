@@ -23,7 +23,8 @@ h2{
     grid-gap: 1rem;
     grid-template-areas:
     "previewTemplate Links";
-
+    padding-left: 10%;
+    padding-right: 10%;
     .previewSection{
         grid-area: previewTemplate;
     }
@@ -62,7 +63,7 @@ h2{
     border-radius: 1rem;
     max-width: 100%;
     border-style: none;
-    background-color: rgba(23, 23, 23, 0.5);
+    background-color: rgb(50, 56, 77);
     padding: 10px;
 }
 
