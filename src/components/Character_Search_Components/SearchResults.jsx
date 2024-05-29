@@ -1,7 +1,7 @@
 function Results(props){
     const {results} = props;
     if (!Array.isArray(results)) {
-        return <p>No results found</p>;
+        return <p>No results found</p>
     }
 
     return(
