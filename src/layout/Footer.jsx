@@ -7,7 +7,9 @@ function Footer() {
     return (
         <div className="footerContainer">
             <footer>
-                <h3>&copy; {new Date().getFullYear()} Ang197</h3>
+                <h3>&copy; {new Date().getFullYear()}
+                    <a className="githubLink" rel="noreferrer   "href="https://github.com/Ang197" target="_blank"> Ang197 </a>
+                </h3>
             </footer>
         </div>
     );

@@ -8,7 +8,7 @@ function Results({results}){
             {results.map((weapon) => (
                 <div key={weapon.name}>
                     <h1>{weapon.name}</h1>
-                    <h5>Rarity: {weapon.rarity} star</h5>
+                    <p>Rarity: {weapon.rarity} star</p>
                     <p>Weapon Type: {weapon.type}</p>
                     <p>Weapon Passive: {weapon.passiveName} ({weapon.passiveDesc})</p>
                     {/* <img src={weapon.name.availableImages} alt="weapon Image"/> */}

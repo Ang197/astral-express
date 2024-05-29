@@ -1,6 +1,5 @@
 import '../style/page-styles/pageTemplate.css'
 // import styles from '../style/css-modules/lightCone.module.css';
-import Links from "../components/Links"
 // import Carousel from "../components/Carousel_Component/Carousel"
 import WeaponSearchFunction from "../components/Light_Cone_Search_Components/SearchFunction"
 
@@ -28,21 +27,18 @@ function Weapons() {
 
     return (
         <>
-            <h2>Light Cones</h2>
-            <div className="pageContainer">
-                <div className="previewSection">
-                        <h1>Weapon Search:</h1>
-                        <WeaponSearchFunction/>
-                        {/* <div className="lightConeContainer">
-                            <Carousel 
-                                // image1={lcPreviewItems[0].props.children.props.src}
-                                // image2={lcPreviewItems[1].props.children.props.src} 
-                                // image3={lcPreviewItems[2].props.children.props.src}
-                            />
-                        </div> */}
-                    </div>
-                    <Links/>
-            </div>
+            <div className="previewSection weaponSection">
+                <h2>Light Cones</h2>
+                    <WeaponSearchFunction/>
+                    {/* <div className="lightConeContainer">
+                        <Carousel 
+                            // image1={lcPreviewItems[0].props.children.props.src}
+                            // image2={lcPreviewItems[1].props.children.props.src} 
+                            // image3={lcPreviewItems[2].props.children.props.src}
+                        />
+                    </div> */}
+                </div>
+                {/* <Links/> */}
         </>
         
     )

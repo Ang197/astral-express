@@ -10,37 +10,45 @@
     --hoverColor: red;
 }
 
-h2{
-    padding-top: 3rem;
-    display:grid;
-    place-items: center;
-}
-
 .pageContainer{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(75%, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(60%, max-content));
     grid-template-rows: auto;
-    grid-gap: 1rem;
+    grid-gap: 0.8rem;
     grid-template-areas:
-    "previewTemplate Links";
-    padding-left: 10%;
-    padding-right: 10%;
-    .previewSection{
-        grid-area: previewTemplate;
+    "About Links"
+    "News Links"
+    "Characters ."
+    "Weapons .";
+    padding-left: 20%;
+    padding-right: 20%;
+    .aboutSection{
+        grid-area: About;
+    }
+
+    .newsSection{
+        grid-area: News;
     }
     
     .linkSection{
         grid-area: Links;
     }
+
+    .characterSection{
+        grid-area: Characters;
+    }
+
+    .weaponSection{
+        grid-area: Weapons;
+    }
 }
 
 
-.description, .creditsLink{
-    padding: 1rem;
+.description{
     margin: 0rem;
     font-weight: normal;
-    font-size: 1.5rem;
-    max-width: 100dvh;
+    font-size: 1.3rem;
+    /* max-width: 100dvh; */
     margin: auto;
 }
 
@@ -55,10 +63,9 @@ h2{
     transition: 0.5s;
 }
 
-.previewSection, .linkSection{
-    display:grid;
-    place-items: center;
-    text-align: center;
+.previewSection{
+    /* display:grid;
+    place-items: center; */
     border: solid 1px;
     border-radius: 1rem;
     max-width: 100%;
@@ -71,11 +78,11 @@ h2{
 @media only screen and (max-width: 960px){
     .pageContainer{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, max-content));
+        grid-template-columns: repeat(auto-fit, minmax(90%, max-content));
         grid-template-rows: auto;
         grid-template-areas: 
-        "previewTemplate"
-        "Links";
+        "previewTemplate" "Links"
+        "previewTemplate";
         font-size: 1rem;
 
         .description, .creditsLink{

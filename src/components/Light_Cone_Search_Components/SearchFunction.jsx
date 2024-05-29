@@ -1,12 +1,15 @@
 import {useState} from 'react';
 import SearchBar from '../../layout/SearchBar'
 import SearchResults from './SearchResults'
+import SearchFormat from "../searchFormat"
 
 function SearchFunction() {
     const [results, setResults] = useState([]);
+
     const handleSearch = async (query) => {
         try{
-            const response = await fetch(`https://genshin.jmp.blue/weapons/${query}`)
+            let formattedQuery = SearchFormat(query)
+            const response = await fetch(`https://genshin.jmp.blue/weapons/${formattedQuery}`)
             const data = await response.json();
             console.log('Response: ', data);
             if(!data || !data.name) {

@@ -6,9 +6,9 @@ import '../style/page-styles/pageTemplate.css'
  */
 function Links() {
     return (
-        <div className="linkSection">
+        <div className="previewSection linkSection">
             <h2>Links</h2>
-            <p>
+            <p className='description'>
                 These are the links to other pages, like latest news 
                 or updates
             </p>

@@ -20,9 +20,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/About" element={<About />} />
-          <Route exact path="/Characters" element={<Characters />} />
-          <Route exact path="/Light_Cones" element={<Light_Cones />} />
+          {/* <Route exact path="/About" element={<About />} /> */}
+          {/* <Route exact path="/Characters" element={<Characters />} />
+          <Route exact path="/Light_Cones" element={<Light_Cones />} /> */}
           <Route exact path="*" element={
             <div className="errorPage">
               <h2>404: Page not found</h2>
