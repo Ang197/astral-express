@@ -26,6 +26,11 @@
         grid-area: About;
     }
 
+    h2{
+        border-bottom: 0.2rem solid #000;
+        padding-bottom: 0.3rem;
+    }
+
     .newsSection{
         grid-area: News;
     }

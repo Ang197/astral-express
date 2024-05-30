@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import SearchBar from '../../layout/SearchBar'
 import SearchResults from './SearchResults'
-import SearchFormat from '../SearchFormat'
+import SearchFormat from '../searchFormat'
 
 function SearchFunction() {
     const [results, setResults] = useState([]);
@@ -21,7 +21,7 @@ function SearchFunction() {
 
             const dataArray = Array.isArray(data) ? data : [data]; //Checks to see if data is an array, or assigns a new array for data
             setResults(dataArray);
-
+            
         } catch (error) {
             console.error('Error fetching data: ', error)
             setErrorMessage('Invalid result. Please enter a valid character name')

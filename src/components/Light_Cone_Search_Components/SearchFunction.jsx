@@ -24,7 +24,7 @@ function SearchFunction() {
 
         } catch (error) {
             console.error('Error fetching data: ', error)
-            setErrorMessage('Invalid result. Please enter a valid character name')
+            setErrorMessage('Invalid result. Please enter a valid weapon name')
             setResults([])
         }
     };

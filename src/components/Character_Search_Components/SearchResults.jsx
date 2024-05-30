@@ -7,14 +7,14 @@ function Results(props){
     return(
         <>
             {results.map((character) => (
-                <div key={character.name}>
+                <div className="characterSearchResults" key={character.name}>
                     <h1>{character.name}</h1>
+                    <img src={`https://genshin.jmp.blue/characters/${character.name.toLowerCase()}/icon-big`}/>
                     <p>Rarity: {character.rarity} star</p>
                     <p>Vision: {character.vision}</p>
                     <p>Weapon type: {character.weapon}</p>
                     <p>Birthday: {character.birthday}</p>
                     <p>{character.description}</p>
-                    {/* <img src={character.name.availableImages} alt="Character Image"/> */}
                 </div>
             ))}   
         </>
