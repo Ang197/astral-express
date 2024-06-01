@@ -28,12 +28,6 @@
 } */
 
 
-@media only screen and (max-width: 960px){
-    .searchBarElement:focus{
-        width: 500px;
-    }
-}
-
 @media only screen and (max-width: 720px){
     .searchBarContainer{
         right: 0;
