@@ -1,0 +1,170 @@
+:root {
+    --navBackground: rgb(43, 45, 46);
+    --sideNavColor: rgb(36, 36, 36);
+    --navLinkHover: #575757;
+    ;
+}
+
+.headerNavbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+
+    margin-top: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    z-index: 1;
+}
+
+.aboutBtn {
+    margin-top: 1.1rem;
+    margin-right: 2.3rem;
+    padding-left: 0.1rem;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+}
+
+.aboutBtn:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--navBackground);
+    border-radius: 10px;
+}
+
+.navLinks {
+    position: relative;
+    display: inline-flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navLinks a {
+    position: relative;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.1rem;
+    z-index: 1;
+    padding-left: 0.4rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.navLinks a::after,
+.aboutBtn::after {
+    content: '';
+    position: absolute;
+    padding-right: 3.1rem;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+
+    height: 1.5em;
+    border-radius: 6px;
+    background-color: var(--navLinkHover);
+    opacity: 0;
+    transition: opacity 400ms, transform 500ms;
+    transform: scale(0);
+
+}
+
+.navLinks a:hover::after,
+.aboutBtn:hover::after {
+    z-index: -1;
+    opacity: 0.65;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+
+.navBtn,
+.navCloseBtn {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/*For half screen on laptop to create sidebar*/
+@media only screen and (max-width: 960px) {
+    .headerNavbar {
+        margin: 0;
+        justify-content: left;
+    }
+
+    .navbar {
+        position: fixed;
+        background-color: var(--sideNavColor);
+
+        left: -100vh;
+        bottom: 0;
+
+        border-radius: 0;
+
+        height: 100%;
+        width: 20%;
+
+        z-index: 2;
+        transition: 0.2s;
+    }
+
+    .aboutBtn {
+        font-size: 1rem;
+    }
+
+    .navBtn,
+    .navCloseBtn {
+        visibility: visible;
+        opacity: 1;
+
+        font-size: 1.5rem;
+        padding: 1rem 0rem 0rem 1.3rem;
+    }
+
+    .navLinks {
+        display: block;
+        margin-top: 30%;
+        padding-left: 25%;
+    }
+
+    .navLinks a {
+        font-size: 1rem;
+    }
+
+    .responsive_nav {
+        transform: translateX(100vh);
+        z-index: 4;
+    }
+
+    .overlay {
+        z-index:9999;
+        box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+    }
+}
+
+/*For mobile screen */
+@media only screen and (max-width: 720px) {
+    .navbar {
+        width: 40%;
+    }
+
+    .navBtn {
+        padding: 0.5rem 0rem 0rem 1rem;
+    }
+
+    .navLinks a {
+        font-size: 1.1rem;
+    }
+}

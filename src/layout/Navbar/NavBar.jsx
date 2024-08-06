@@ -1,7 +1,9 @@
-import '../../style/nav.css';
+import navStyles from './Nav.module.css';
 import { menuItems } from './menuItems'
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { useRef } from 'react';
+
+// import About from "../../pages/About/About"
 
 /**
  * Used to hold links for the other pages as well
@@ -14,35 +16,43 @@ function Navbar() {
 
     // useRef and Arrow function used when the screen only fits on Mobile size or smaller
     const navRef = useRef();
+    
     const showNavBar = () => {
-        navRef.current.classList.toggle("responsive_nav")
+        navRef.current.classList.toggle(navStyles.responsive_nav)
+        navRef.current.classList.toggle(navStyles.overlay)
     }
 
     return (
         <>
-            <div className="headerNavbar">
-                <nav className="navbar" ref={navRef}> 
-                    <ul className="navLinks">
+            <header className={navStyles.headerNavbar}>
+                <nav className={navStyles.navbar} ref={navRef}>
+                    <ul className={navStyles.navLinks}>
                         {menuItems.map((menu, index) => {
-                            return(
+                            return (
                                 <li key={index}>
                                     <a href={menu.url}>{menu.title}</a>
                                 </li>
                             )
                         })}
                     </ul>
-                    <button className="navBtn navCloseBtn" onClick={showNavBar}>
-                        <FaTimes />
+
+                    <button className={`${navStyles.navCloseBtn}`} onClick={showNavBar}>
+                        <FaBars />
                     </button>
+
                 </nav>
+                
+                <p className={navStyles.aboutBtn}>About</p>
+
                 <button
-                    className="navBtn"
+                    className={navStyles.navBtn}
                     onClick={showNavBar}>
                     <FaBars />
                 </button>
-            </div>
+
+            </header>
         </>
-        
+
 
     )
 }

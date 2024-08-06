@@ -1,37 +1,26 @@
-// import Carousel from "react-bootstrap/Carousel"
-// import 'bootstrap/dist/css/bootstrap.css'
-import {useState} from "react";
-import '../../style/carousel.css'
+import { useEffect } from 'react'
+import carouselStyles from './Carousel.module.css'
 
 /**
  * Used to create a preview for items in the Home page
  * for either current banners/events/news/resources for players
  * 
  */
-function carousel(props){
-    const [index, setIndex] = useState(0);
+function Carousel(){   
+    useEffect(()=>{
+        let copy = document.querySelector(`.${carouselStyles.carouselItems}`).cloneNode(true)
+        document.querySelector(`.${carouselStyles.carouselContainer}`).appendChild(copy)
+    })
 
-    const handleSelect = (selectedIndex) => {
-        setIndex(selectedIndex)
-    }
-    
     return(
-        <div className="carouselContainer">
-            {/* <Carousel activeIndex={index} 
-                    onSelect={handleSelect}>
-                <Carousel.Item >
-                    <img className="carouselImage" src={props.image1}/> 
-                </Carousel.Item>
-                <Carousel.Item >
-                    <img className="carouselImage" src={props.image2}/>
-                </Carousel.Item>
-                <Carousel.Item >
-                    <img className="carouselImage" src={props.image3}/>
-                </Carousel.Item>
-            </Carousel> */}
+        <div className={carouselStyles.carouselContainer}>
+            <div className={carouselStyles.carouselItems}>
+                <img src="./news-preview/himiko.png"/>
+                <img src="./news-preview/seele.png"/>
+                <img src="./news-preview/silver-wolf.png"/>
+            </div>
         </div>
-
     )
 }
 
-export default carousel
+export default Carousel

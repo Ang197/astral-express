@@ -1,0 +1,44 @@
+.searchBarContainer{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.searchBarElement{
+    outline: none;
+    font-size: 1rem;
+    border: solid gray;
+    border-style: none;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    width: 40rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.searchBtn{
+    position: absolute !important;
+    right: 1.8rem;
+    top: 1.2rem;
+}
+
+/* .searchBarElement:focus{
+    width: 60rem;
+} */
+
+
+@media only screen and (max-width: 960px){
+    .searchBarElement:focus{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .searchBarContainer{
+        right: 0;
+    }
+    .searchBarElement:focus{
+        width: 245px;
+    }
+}
