@@ -28,7 +28,7 @@ function Weapons() {
     return (
         <>
             <div className="previewSection weaponSection">
-                <h2>Light Cones</h2>
+                <h2>Light cones</h2>
                     <WeaponSearchFunction/>
                     {/* <div className="lightConeContainer">
                         <Carousel 
