@@ -1,6 +1,7 @@
 import Navbar from './layout/Navbar/NavBar.jsx'
 import Footer from './layout/Footer_Component/Footer.jsx'
 
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,11 +24,6 @@ function App() {
           }
           />
         </Routes>
-        {/* <hr
-          style={{
-            border: "solid #242424 0.1px",
-            marginTop: "25px",
-          }}></hr> */}
         <Footer />
       </Router>
     </>

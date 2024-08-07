@@ -2,7 +2,7 @@ function About() {
     return (
         <>
             <div className="aboutSection">
-                <h2>About us</h2>
+                <h2> us</h2>
                 <p className="description">
                     Astral Express is a resource website for Honkai Star Rail players.
                     Need information for characters or light cones? Astral Express is

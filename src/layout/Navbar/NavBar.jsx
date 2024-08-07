@@ -2,6 +2,9 @@ import navStyles from './Nav.module.css';
 import { menuItems } from './menuItems'
 import { FaBars } from "react-icons/fa";
 import { useRef } from 'react';
+import { useState } from 'react';
+
+import Overlays from '../../components/Overlays.jsx'
 
 // import About from "../../pages/About/About"
 
@@ -13,6 +16,7 @@ import { useRef } from 'react';
  */
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
 
     // useRef and Arrow function used when the screen only fits on Mobile size or smaller
     const navRef = useRef();
@@ -24,6 +28,7 @@ function Navbar() {
 
     return (
         <>
+            <Overlays isOpen={isOpen}/>
             <header className={navStyles.headerNavbar}>
                 <nav className={navStyles.navbar} ref={navRef}>
                     <ul className={navStyles.navLinks}>
@@ -42,7 +47,7 @@ function Navbar() {
 
                 </nav>
                 
-                <p className={navStyles.aboutBtn}>About</p>
+                <p onClick={()=> setIsOpen(true)} className={navStyles.aboutBtn}>About</p>
 
                 <button
                     className={navStyles.navBtn}
